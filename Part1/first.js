@@ -74,3 +74,22 @@ f("ppppppppppp");
 
 console.log("function expression done.")
 
+// tutorial 28
+var names2 = ["pp", "qq", "rr", "ee", 45, 24, "sd"]
+var names = ["Sajal", "Debnath", mul, names2];
+console.log(names)
+
+document.write(names[3]);
+document.write("<br/>")
+document.write(names[3][2]);
+
+
+// add elements after index 2, replacing 0 elements
+names2.splice(2,0,"wwww", "eeeeee","zzzzzzzzz");
+console.log(names2)
+console.log(names2.sort())
+console.log(names2.reverse())
+
+
+
+
