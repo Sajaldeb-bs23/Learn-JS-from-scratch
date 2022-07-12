@@ -4,3 +4,10 @@
         font-weight: bold;
         font-style: italic;
 }
+
+.para-style2{
+        color: rgb(228, 8, 30);
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 400;
+}

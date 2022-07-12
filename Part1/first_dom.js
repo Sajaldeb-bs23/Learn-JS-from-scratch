@@ -65,3 +65,15 @@ function Remove(){
     paraVar.style.color = "blue";
 
 }
+
+// Eventlistener
+
+var event_var = document.getElementById("demo")
+
+event_var.addEventListener("mouseover", function(){
+    event_var.classList.add("para-style2")
+});
+
+event_var.addEventListener("mouseout", function(){
+    event_var.classList.remove("para-style2")
+});
