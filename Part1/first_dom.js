@@ -50,3 +50,18 @@ function next(){
     }
     ImgTag.src = photos[count]
 }
+
+
+// var paraVar = document.getElementById("#para1")
+function Add(){
+    var paraVar = document.getElementById("para1")
+    paraVar.classList.add("para-style")
+    paraVar.style.color = "red";
+}
+
+function Remove(){
+    var paraVar = document.getElementById("para1")
+    paraVar.classList.remove("para-style")
+    paraVar.style.color = "blue";
+
+}
