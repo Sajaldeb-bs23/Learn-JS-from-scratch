@@ -77,3 +77,29 @@ event_var.addEventListener("mouseover", function(){
 event_var.addEventListener("mouseout", function(){
     event_var.classList.remove("para-style2")
 });
+
+
+const form = document.querySelectorAll("form")[0]
+const name = form.querySelector("div #name")
+const email = form.querySelector("div #email")
+const pass = form.querySelector("div #password")
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    console.log("submitted");
+    console.log(name.value)
+    console.log(email.value)
+    console.log(pass.value)
+
+    const userInfo = {
+        name: name.value,
+        email: email.value,
+        pass: pass.value
+    }
+
+    name.value = "";
+    email.value = "";
+    pass.value = "";
+
+    console.log(userInfo);
+});
