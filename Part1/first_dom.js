@@ -120,3 +120,23 @@ catch(error){
 }finally{
     document.write("In finally block ")
 }
+
+
+function check(){
+    var checkname = document.getElementById("check-name").value;
+    // console.log(checkname.value);
+    var showvalue = document.getElementById("Show-value");
+    try{
+        if (checkname<5){
+            showvalue.innerHTML = "Input is too low" + checkname
+            throw "Input is too low"
+            
+        }else if (checkname>10){
+            showvalue.innerHTML = "Input is too large" + checkname
+            throw "Input is too large"
+        }
+    }
+    catch(error){
+        console.log(error)
+    }
+}
