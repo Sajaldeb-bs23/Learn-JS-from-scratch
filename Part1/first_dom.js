@@ -103,3 +103,20 @@ form.addEventListener("submit", function(e){
 
     console.log(userInfo);
 });
+
+document.write("<br/>");
+// try catch  (61 tutorial )
+
+
+try {
+    document.write("Hello, Sajal" + "<br/>");
+    document.write(xxx);
+    document.write("error in previous line.")
+}
+catch(error){
+    document.write(error.name);
+    console.log(error.message)
+    document.write( "<br/>" + "error occured." + "<br/>")
+}finally{
+    document.write("In finally block ")
+}
